@@ -1,0 +1,89 @@
+#live {
+    height: 900px;
+    display: flex;
+    flex-flow: column;
+    margin-bottom: 100px;
+}
+
+
+#live-title {
+    height: 100px;
+    display: flex;
+    flex-flow: row;
+    justify-content: space-between;
+}
+
+#lt-left {
+    font-size: 50px;
+    line-height: 100px;
+    margin-left: 30px;
+    font-weight: 700;
+}
+
+#lt-right {
+    font-size: 40px;
+    line-height: 100px;
+    margin-right: 30px;
+    color: #999999;
+}
+
+#live-body {
+    height: 800px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+}
+
+.lb {
+    width: 48%;
+}
+
+.lb-pic {
+    height: 300px;
+    display: flex;
+    flex-flow: row;
+    justify-content: space-between;
+    align-items: flex-end;
+    font-size: 30px;
+    color: #fff;
+}
+
+.lb-pic .left {
+    margin: 0 0 10px 10px;
+}
+
+.lb-pic .right {
+    margin: 0 10px 10px 0;
+}
+
+.lb-title {
+    font-size: 40px;
+    line-height: 100px;
+    margin-left: 20px;
+}
+
+#lb-pic1 {
+    background: url("../images/女主播/女主1.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+#lb-pic2 {
+    background: url("../images/女主播/女主2.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+#lb-pic3 {
+    background: url("../images/女主播/女主3.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+#lb-pic4 {
+    background: url("../images/女主播/女主4.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+

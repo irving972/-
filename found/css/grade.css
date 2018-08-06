@@ -1,0 +1,155 @@
+#grade {
+    height: 400px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    font-size: 40px;
+    line-height: 70px;
+}
+
+#grade>div {
+    width: 25%;
+    height: 200px;
+    box-sizing: border-box;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+}
+
+#grade1 div:nth-child(1){
+     width: 130px;
+     height: 130px;
+     background-color: #f19862;
+     background-size: cover;
+     background-position: top center;
+     background-repeat: no-repeat;
+     border-radius: 50%;
+ }
+
+#grade1 div:nth-child(1)>div {
+    background: url("../images/八个小图标/1.svg");
+    background-size:80px 80px;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#grade2 div:nth-child(1){
+    width: 130px;
+    height: 130px;
+    background-color: #9a75f7;
+    background-size: cover;
+    background-position: top center;
+    background-repeat: no-repeat;
+    border-radius: 50%;
+}
+
+#grade2 div:nth-child(1)>div {
+    background: url("../images/八个小图标/2.svg");
+    background-size:80px 80px;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#grade3 div:nth-child(1){
+    width: 130px;
+    height: 130px;
+    background-color: #72aef7;
+    background-size: cover;
+    background-position: top center;
+    background-repeat: no-repeat;
+    border-radius: 50%;
+}
+
+#grade3 div:nth-child(1)>div {
+    background: url("../images/八个小图标/3.svg");
+    background-size:80px 80px;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#grade4 div:nth-child(1){
+    width: 130px;
+    height: 130px;
+    background-color: #668ff8;
+    background-size: cover;
+    background-position: top center;
+    background-repeat: no-repeat;
+    border-radius: 50%;
+}
+
+#grade4 div:nth-child(1)>div {
+    background: url("../images/八个小图标/4.svg");
+    background-size:80px 80px;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#grade5 div:nth-child(1){
+    width: 130px;
+    height: 130px;
+    background-color: #ef8481;
+    background-size: cover;
+    background-position: top center;
+    background-repeat: no-repeat;
+    border-radius: 50%;
+}
+
+#grade5 div:nth-child(1)>div {
+    background: url("../images/八个小图标/5.svg");
+    background-size:130px 130px;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#grade6 div:nth-child(1){
+    width: 130px;
+    height: 130px;
+    background-color: #f4b45e;
+    background-size: cover;
+    background-position: top center;
+    background-repeat: no-repeat;
+    border-radius: 50%;
+}
+
+#grade6 div:nth-child(1)>div {
+    background: url("../images/八个小图标/6.svg");
+    background-size:80px 80px;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#grade7 div:nth-child(1){
+    width: 130px;
+    height: 130px;
+    background-color: #f19862;
+    background-size: cover;
+    background-position: top center;
+    background-repeat: no-repeat;
+    border-radius: 50%;
+}
+
+#grade7 div:nth-child(1)>div {
+    background: url("../images/八个小图标/7.svg");
+    background-size:80px 80px;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#grade8 div:nth-child(1){
+    width: 130px;
+    height: 130px;
+    background-color: #9a75f7;
+    background-size: cover;
+    background-position: top center;
+    background-repeat: no-repeat;
+    border-radius: 50%;
+}
+
+#grade8 div:nth-child(1)>div {
+    background: url("../images/八个小图标/8.svg");
+    background-size:70px 70px;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+

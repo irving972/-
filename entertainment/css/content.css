@@ -1,0 +1,157 @@
+#content {
+    width: 100%;
+    height: 100%;
+    flex: 1;
+    overflow: auto;
+
+}
+
+
+#banner {
+    height: 400px;
+    background: url("../images/banner.png");
+    background-size: cover;
+    background-position: center;
+}
+
+#outdoor {
+    height: 1000px;
+    margin-top: 100px;
+}
+
+#music {
+    height: 1000px;
+}
+
+#science {
+    height: 1000px;
+}
+
+.live-title {
+    height: 100px;
+    display: flex;
+    flex-flow: row;
+    justify-content: space-between;
+}
+
+.lt-left {
+    font-size: 50px;
+    line-height: 100px;
+    margin-left: 30px;
+    font-weight: 700;
+}
+
+.lt-right {
+    font-size: 40px;
+    line-height: 100px;
+    margin-right: 30px;
+    color: #999999;
+}
+
+.live-body {
+    height: 800px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+}
+
+.lb {
+    width: 48%;
+}
+
+.lb-pic {
+    height: 300px;
+    display: flex;
+    flex-flow: row;
+    justify-content: space-between;
+    align-items: flex-end;
+    font-size: 30px;
+    color: #fff;
+}
+
+.lb-pic .left {
+    margin: 0 0 10px 10px;
+}
+
+.lb-pic .right {
+    margin: 0 10px 10px 0;
+}
+
+.lb-title {
+    font-size: 40px;
+    line-height: 100px;
+    margin-left: 20px;
+}
+
+#lb-pic1 {
+    background: url("../images/主播封面图/户外1.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+#lb-pic2 {
+    background: url("../images/主播封面图/户外2.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+#lb-pic3 {
+    background: url("../images/主播封面图/户外3.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+#lb-pic4 {
+    background: url("../images/主播封面图/户外4.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+
+#lb2-pic1 {
+    background: url("../images/主播封面图/音乐1.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+#lb2-pic2 {
+    background: url("../images/主播封面图/音乐2.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+#lb2-pic3 {
+    background: url("../images/主播封面图/音乐3.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+#lb2-pic4 {
+    background: url("../images/主播封面图/音乐4.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+#lb3-pic1 {
+    background: url("../images/主播封面图/科技1.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+#lb3-pic2 {
+    background: url("../images/主播封面图/科技2.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+#lb3-pic3 {
+    background: url("../images/主播封面图/科技3.png");
+    background-size: cover;
+    background-position: center;
+}
+
+#lb3-pic4 {
+    background: url("../images/主播封面图/科技4.jpg");
+    background-size: cover;
+    background-position: center;
+}

@@ -1,0 +1,40 @@
+#header-nav {
+    height: 120px;
+    display: flex;
+    flex-flow: row;
+    justify-content: space-between;
+}
+
+#hn-left {
+    width: 150px;
+    height: 120px;
+    background: url("../images/向左.svg");
+    background-size: 50px 50px;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#hn-right {
+    width: 300px;
+    height: 120px;
+    display: flex;
+    flex-flow: row;
+}
+
+#hn-right div:nth-child(1){
+    width: 150px;
+    height: 120px;
+    background: url("../images/免流.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 80px 80px;
+}
+
+#hn-right div:nth-child(2){
+    width: 150px;
+    height: 120px;
+    background: url("../images/设置.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 80px 80px;
+}

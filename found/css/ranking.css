@@ -1,0 +1,122 @@
+#ranking {
+    height: 800px;
+}
+
+#rk-title {
+    height: 100px;
+    display: flex;
+    flex-flow: row;
+    justify-content: space-between;
+}
+
+#rkt-left {
+    font-size: 50px;
+    line-height: 100px;
+    margin-left: 30px;
+    font-weight: 700;
+}
+
+#rkt-right {
+    font-size: 40px;
+    line-height: 100px;
+    margin-right: 30px;
+    color: #999999;
+}
+
+#rk-body {
+    height: 700px;
+    display: flex;
+    flex-flow: row;
+    justify-content: space-between;
+}
+
+.rk {
+    width: 32%;
+    height: 400px;
+    background-color: #f7f7f7;
+    margin-top: 160px;
+    position: relative;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.rk .rk-head {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    position: absolute;
+    left: 50px;
+    top: -100px;
+
+}
+
+.rk .rk-place {
+    width: 60px;
+    height: 26px;
+    position: absolute;
+    top: 82px;
+    left: 118px;
+    border-radius: 5px;
+    text-align: center;
+    line-height: 26px;
+    font-size: 20px;
+}
+
+#place1 {
+    background : linear-gradient(#eef1f5,#bfc5cb);
+    color: #60676c;
+}
+
+#place2 {
+    background : linear-gradient(#f6d9a3,#be9758);
+    color: #ffffff;
+}
+
+#place3 {
+    background : linear-gradient(#f5bda0,#ba6843);
+    color: #ffffff;
+}
+
+
+.rk .rk-name {
+    margin-top: 100px;
+    font-size: 45px;
+}
+
+.rk .rk-grade {
+    font-size: 30px;
+    margin-top: 30px;
+    color: #999999;
+}
+
+.rk .attention {
+    width: 100px;
+    height: 50px;
+    margin-top: 50px;
+    background-color: #ed6c39;
+    border-radius: 10px;
+    font-size: 35px;
+    text-align: center;
+    color: #ffffff;
+
+}
+
+#head1 {
+    background: url("../images/主播头像/head1.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+#head2 {
+    background: url("../images/主播头像/head2.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+#head3 {
+    background: url("../images/主播头像/head3.jpg");
+    background-size: cover;
+    background-position: center;
+}

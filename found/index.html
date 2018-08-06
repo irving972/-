@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>发现页</title>
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/container.css">
+    <link rel="stylesheet" href="css/header-signal.css">
+    <link rel="stylesheet" href="css/header-nav.css">
+    <link rel="stylesheet" href="css/content.css">
+    <link rel="stylesheet" href="css/banner.css">
+    <link rel="stylesheet" href="css/grade.css">
+    <link rel="stylesheet" href="css/advertise.css">
+    <link rel="stylesheet" href="css/live.css">
+    <link rel="stylesheet" href="css/ranking.css">
+    <link rel="stylesheet" href="css/competition.css">
+    <link rel="stylesheet" href="css/button.css">
+    <script>
+        var t;
+        t = setTimeout(time,0);
+        function time()
+        {
+            clearTimeout(t);
+            dt = new Date();
+            var h=dt.getHours();
+            var m=dt.getMinutes();
+            if(m < 10){
+                document.getElementById("time").innerHTML =  h + ":" + "0" + m ;
+            }else{
+                document.getElementById("time").innerHTML =  h + ":" + m ;
+            }
+            t = setTimeout(time,1000);
+        }
+    </script>
+
+</head>
+<body>
+<div id="container">
+    <div id="header">
+        <div id="signal">
+            <div id="signal-left">
+                <div id="time"></div>
+            </div>
+            <div id="signal-right">
+                <div id="signal-body">
+                    <div class="signal-body"></div>
+                    <div class="signal-body"></div>
+                    <div class="signal-body"></div>
+                    <div class="signal-body"></div>
+                </div>
+                <div id="network">
+                    <div>4G</div>
+                </div>
+                <div id="battery" class="xy-center">
+                    <div id="battery-body">
+                        <div id="battery-core" class="charging"></div>
+                    </div>
+                    <div id="battery-header"></div>
+                </div>
+
+            </div>
+        </div>
+        <div id="nav" class="xy-center">
+            <div id="photo" class="xy-center">
+                <a href="../personal/index.html"><div></div></a>
+            </div>
+            <div id="search">
+                <div id="s1"></div>
+                <div id="s2" contenteditable placeholder="主播无状态 "></div>
+                <div id="s3"></div>
+            </div>
+            <div id="icon1"></div>
+            <div id="icon2"></div>
+            <div id="icon3"></div>
+        </div>
+    </div>
+    <div id="content">
+        <div id="banner">
+            <div></div>
+        </div>
+        <div id="grade">
+            <div id="grade1">
+                <div class="xy-center"><div></div></div>
+                <div>视频</div>
+            </div>
+            <div id="grade2">
+                <div class="xy-center"><div></div></div>
+                <div>音频</div>
+            </div>
+            <div id="grade3">
+                <div class="xy-center"><div></div></div>
+                <div>手游</div>
+            </div>
+            <div id="grade4">
+                <div class="xy-center"><div></div></div>
+                <div>小游戏</div>
+            </div>
+            <div id="grade5">
+                <div class="xy-center"><div></div></div>
+                <div>车队</div>
+            </div>
+            <div id="grade6">
+                <div class="xy-center"><div></div></div>
+                <div>签到</div>
+            </div>
+            <div id="grade7">
+                <div class="xy-center"><div></div></div>
+                <div>星球</div>
+            </div>
+            <div id="grade8">
+                <div class="xy-center"><div></div></div>
+                <div>商城</div>
+            </div>
+        </div>
+        <div id="advertise">
+            <div></div>
+        </div>
+        <div id="live">
+            <div id="live-title">
+                <div id="lt-left">语音直播</div>
+                <div id="lt-right">查看更多></div>
+            </div>
+
+            <div id="live-body">
+                <div class="lb">
+                    <div class="lb-pic" id="lb-pic1">
+                        <div class="left">小6想去月球</div>
+                        <div class="right">5.5万</div>
+                    </div>
+                    <div class="lb-title">今晚11点开播哦</div>
+                </div>
+
+                <div class="lb">
+                    <div class="lb-pic" id="lb-pic2">
+                        <div class="left">婧宝儿</div>
+                        <div class="right">5.1万</div>
+                    </div>
+                    <div class="lb-title">失去的就不再计较</div>
+                </div>
+
+                <div class="lb">
+                    <div class="lb-pic" id="lb-pic3">
+                        <div class="left">瓜瓜gea</div>
+                        <div class="right">5.5万</div>
+                    </div>
+                    <div class="lb-title">仙女棒送瓜瓜</div>
+                </div>
+
+                <div class="lb">
+                    <div class="lb-pic" id="lb-pic4">
+                        <div class="left">小小旭吖i</div>
+                        <div class="right">3.3万</div>
+                    </div>
+                    <div class="lb-title">在你冷的地方做暖阳</div>
+                </div>
+            </div>
+        </div>
+
+        <div id="ranking">
+            <div id="rk-title">
+                <div id="rkt-left">主播榜</div>
+                <div id="rkt-right">更多榜单></div>
+            </div>
+
+            <div id="rk-body">
+                <div class="rk">
+                    <div class="rk-head" id="head1"></div>
+                    <div class="rk-name">冯提莫</div>
+                    <div class="rk-place" id="place1">NO.2</div>
+                    <div class="rk-grade">英雄联盟</div>
+                    <div class="attention" >关注</div>
+                </div>
+                <div class="rk">
+                        <div class="rk-head" id="head2"></div>
+                        <div class="rk-name">旭旭宝宝</div>
+                        <div class="rk-place" id="place2">NO.1</div>
+                        <div class="rk-grade">DNF</div>
+                        <div class="attention" >关注</div>
+                </div>
+                <div class="rk">
+                        <div class="rk-head" id="head3"></div>
+                        <div class="rk-name">阿冷aleng</div>
+                        <div class="rk-place" id="place3">NO.3</div>
+                        <div class="rk-grade">英雄联盟</div>
+                        <div class="attention" >关注</div>
+                </div>
+            </div>
+        </div>
+
+
+
+    </div>
+    <div id="button">
+        <div>
+            <div class="button-pic" id="btn-pic1"></div>
+            <a href="../homePage/index.html" target="_self"><div class="write">推荐</div></a>
+        </div>
+        <div>
+            <div class="button-pic" id="btn-pic2"></div>
+            <a href="../entertainment/index.html" target="_self"><div class="write">娱乐</div></a>
+        </div>
+        <div>
+            <div class="button-pic" id="btn-pic3"></div>
+            <a href="../attention/index.html" target="_self"><div class="write">关注</div></a>
+        </div>
+        <div>
+            <div class="button-pic" id="btn-pic4"></div>
+            <a href="../fishbar/index.html" target="_self"><div class="write">鱼吧</div></a>
+        </div>
+        <div>
+            <div class="button-pic" id="btn-pic5"></div>
+            <div class="write"  style="color: #ee7744">发现</div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>首页</title>
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/container.css">
+    <link rel="stylesheet" href="css/header-signal.css">
+    <link rel="stylesheet" href="css/header-nav.css">
+    <link rel="stylesheet" href="css/header-menu.css">
+    <link rel="stylesheet" href="css/content.css">
+    <link rel="stylesheet" href="css/button.css">
+    <script>
+        var t;
+        t = setTimeout(time,0);
+        function time()
+        {
+            clearTimeout(t);
+            dt = new Date();
+            var h=dt.getHours();
+            var m=dt.getMinutes();
+            if(m < 10){
+                document.getElementById("time").innerHTML =  h + ":" + "0" + m ;
+            }else{
+                document.getElementById("time").innerHTML =  h + ":" + m ;
+            }
+            t = setTimeout(time,1000);
+        }
+    </script>
+</head>
+<body>
+    <div id="container">
+        <!--头部开始-->
+        <div id="header">
+            <div id="signal">
+            <div id="signal-left">
+                <div id="time"></div>
+            </div>
+            <div id="signal-right">
+                <div id="signal-body">
+                    <div class="signal-body"></div>
+                    <div class="signal-body"></div>
+                    <div class="signal-body"></div>
+                    <div class="signal-body"></div>
+                </div>
+                <div id="network">
+                    <div>4G</div>
+                </div>
+                <div id="battery" class="xy-center">
+                    <div id="battery-body">
+                        <div id="battery-core" class="charging"></div>
+                    </div>
+                    <div id="battery-header"></div>
+                </div>
+
+            </div>
+        </div>
+            <div id="nav" class="xy-center">
+                <div id="photo" class="xy-center">
+                <a href="../personal/index.html"><div></div></a>
+            </div>
+            <div id="search">
+                <div id="s1"></div>
+                <div id="s2" contenteditable placeholder="主播卢本伟"></div>
+                <div id="s3"></div>
+            </div>
+            <div id="icon1"></div>
+            <div id="icon2"></div>
+            <div id="icon3"></div>
+        </div>
+            <div id="menu">
+                <div class="title">分类</div>
+                <div class="title" style="font-weight: 600;">推荐</div>
+                <div class="title">全部</div>
+                <div class="title">LOL</div>
+                <div class="title">绝地求生</div>
+                <div class="title">王者荣耀</div>
+            </div>
+        </div>
+        <!--头部结束-->
+
+        <!--中间开始-->
+        <div id="content">
+            <div id="pic-body">
+                <div id="p1"><div>户外</div></div>
+                <div id="p2"><div>美食</div></div>
+                <div id="p3"><div>原创IP</div></div>
+                <div id="p4"><div>一起看</div></div>
+                <div id="p5"><div>英雄联盟</div></div>
+                <div id="p6"><div>绝地求生</div></div>
+                <div id="p7"><div>王者荣耀</div></div>
+                <div id="p8" style="background-size: 100px 150px"><div>更多</div></div>
+            </div>
+            <div id="activity">
+                <div id="act-left" class="xy-center">
+                    <div id="flag" class="xy-center"><div class="xy-center"><div></div></div></div>
+                    <div id="flag-txt">活动</div>
+                </div>
+                <div id="act-middle">
+                    <div id="act-middle-top">韩国美少女Yurisa入驻二次元</div>
+                    <div id="act-middle-bottom">8月07日  19:00开始  <span>244</span>人预订</div>
+                </div>
+                <div id="act-right" class="xy-center"><div>预订</div></div>
+            </div>
+            <div id="live">
+                <div id="live-title">热门推荐</div>
+                <div id="live-body">
+                    <div class="live">
+                        <div class="pic" id="pic1">
+                            <div>杀杀杀人哥</div>
+                            <div><img src="images/直播封面/火苗.svg" width="40px" height="40px"><span>5.6万</span></div>
+                        </div>
+                        <div class="pic-title">杀人哥：只玩闪光弹</div>
+                        <div class="game-name">守望先锋></div>
+                    </div>
+                    <div class="live">
+                        <div class="pic" id="pic2">
+                            <div>斗鱼tv弱智</div>
+                            <div><img src="images/直播封面/火苗.svg" width="40px" height="40px"><span>3.9万</span></div>
+                        </div>
+                        <div class="pic-title">弱智：国服最行行星！</div>
+                        <div class="game-name">守望先锋></div>
+
+                    </div>
+                    <div class="live">
+                        <div class="pic" id="pic3">
+                            <div>PGI全球邀请赛</div>
+                            <div><img src="images/直播封面/火苗.svg" width="40px" height="40px"><span>185万</span></div>
+                        </div>
+                        <div class="pic-title">恭喜OMG获得FPP冠军</div>
+                        <div class="game-name">绝地求生></div>
+
+                    </div>
+                    <div class="live">
+                        <div class="pic" id="pic4">
+                            <div>赛事专用</div>
+                            <div><img src="images/直播封面/火苗.svg" width="40px" height="40px"><span>105万</span></div>
+                        </div>
+                        <div class="pic-title">LPL斗鱼解说台</div>
+                        <div class="game-name">英雄联盟></div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--中间结束-->
+
+        <!--尾部开始-->
+        <div id="button">
+            <div>
+                <div class="button-pic" id="btn-pic1"></div>
+                <div class="write" style="color: #ee7744">推荐</div>
+            </div>
+            <div>
+                <div class="button-pic" id="btn-pic2"></div>
+                <a href="../entertainment/index.html" target="_self"><div class="write">娱乐</div></a>
+            </div>
+            <div>
+                <div class="button-pic" id="btn-pic3"></div>
+                <a href="../attention/index.html" target="_self"><div class="write">关注</div></a>
+            </div>
+            <div>
+                <div class="button-pic" id="btn-pic4"></div>
+                <a href="../fishbar/index.html" target="_self"><div class="write">鱼吧</div></a>
+            </div>
+            <div>
+                <div class="button-pic" id="btn-pic5"></div>
+                <a href="../found/index.html" target="_self"><div class="write">发现</div></a>
+            </div>
+        </div>
+        <!--尾部结束-->
+    </div>
+</body>
+</html>

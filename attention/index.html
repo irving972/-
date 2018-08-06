@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>关注页</title>
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/container.css">
+    <link rel="stylesheet" href="css/header-nav.css">
+    <link rel="stylesheet" href="css/header-signal.css">
+    <link rel="stylesheet" href="css/content.css">
+    <link rel="stylesheet" href="css/button.css">
+    <script>
+        var t;
+        t = setTimeout(time,0);
+        function time()
+        {
+            clearTimeout(t);
+            dt = new Date();
+            var h=dt.getHours();
+            var m=dt.getMinutes();
+            if(m < 10){
+                document.getElementById("time").innerHTML =  h + ":" + "0" + m ;
+            }else{
+                document.getElementById("time").innerHTML =  h + ":" + m ;
+            }
+            t = setTimeout(time,1000);
+        }
+
+        window.onload = function () {
+            var btn = document.getElementById("xdd-btn");
+            var myVideo = document.getElementById("myVideo");
+            btn.onclick=function () {
+                if(myVideo.paused){
+                    myVideo.play();
+                    btn.style.background = "url('images/其他/暂停播放.svg') ";
+                }else{
+                    myVideo.pause();
+                    btn.style.background = "url('images/其他/播放.svg') ";
+                }
+            }
+        }
+    </script>
+</head>
+<body>
+<div id="container">
+    <div id="header">
+        <div id="signal">
+            <div id="signal-left">
+                <div id="time"></div>
+            </div>
+            <div id="signal-right">
+                <div id="signal-body">
+                    <div class="signal-body"></div>
+                    <div class="signal-body"></div>
+                    <div class="signal-body"></div>
+                    <div class="signal-body"></div>
+                </div>
+                <div id="network">
+                    <div>4G</div>
+                </div>
+                <div id="battery" class="xy-center">
+                    <div id="battery-body">
+                        <div id="battery-core" class="charging"></div>
+                    </div>
+                    <div id="battery-header"></div>
+                </div>
+
+            </div>
+        </div>
+        <div id="nav" class="xy-center">
+            <div id="photo" class="xy-center">
+                <a href="../personal/index.html"><div></div></a>
+            </div>
+            <div id="search">
+                <div id="s1"></div>
+                <div id="s2" contenteditable placeholder="主播五五开"></div>
+                <div id="s3"></div>
+            </div>
+            <div id="icon1"></div>
+            <div id="icon2"></div>
+            <div id="icon3"></div>
+        </div>
+    </div>
+    <div id="content">
+        <div id="content-title">
+            <div>直播</div>
+            <div>视频</div>
+            <div class="color-orange">动态</div>
+        </div>
+        <div id="mine">
+            <div id="mine-photo"  class="xy-center">
+                <div class="bg-center"></div>
+            </div>
+            <div id="mine-title">
+                <div>分享我的动态</div>
+            </div>
+            <div id="mine-camera" class="xy-center">
+                <div class="xy-center">
+                    <div class="bg-center"></div>
+                </div>
+            </div>
+        </div>
+        <div id="dynamic1" class="dynamic">
+            <div class="dynamic-title">
+                <div class="dt-photo xy-center" >
+                    <div id="dt-photo1"></div>
+                </div>
+                <div class="dt-name">
+                    <div class="">
+                        <div class="name">冷冷啊ovo</div>
+                        <div class="sex xy-center"><div></div></div>
+                    </div>
+                    <div class="">
+                        3小时前  1071阅读
+                    </div>
+                </div>
+                <div class="dt-down xy-center">
+                    <div></div>
+                </div>
+            </div>
+            <div class="dynamic-body">
+                <div>
+                    <div class="pic"><img src="images/主播动态/genji.jpeg" width="700" height="400"></div>
+                    <div class="txt">源氏这英雄是真的难针对，又是开心直播的一天！</div>
+                </div>
+            </div>
+            <div class="dynamic-footer">
+                <div class="dyfooter-left xy-center">
+                    <div>冷冷阿</div>
+                </div>
+                <div class="dyfooter-right">
+                    <div class="transit">
+                        <div></div>
+                        转发
+                    </div>
+                    <div class="comment">
+                        <div></div>
+                        10
+                    </div>
+                    <div class="like">
+                        <div></div>
+                        37
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <div id="dynamic2" class="dynamic">
+            <div class="dynamic-title">
+                <div class="dt-photo xy-center" >
+                    <div id="dt-photo2"></div>
+                </div>
+                <div class="dt-name">
+                    <div class="">
+                        <div class="name">雾山FOG53</div>
+                        <div class="sex xy-center"><div></div></div>
+                    </div>
+                    <div class="">
+                        3小时前  391阅读
+                    </div>
+                </div>
+                <div class="dt-down xy-center">
+                    <div></div>
+                </div>
+            </div>
+            <div class="dynamic-body">
+                <div>
+                    <div class="pic"><img src="images/主播动态/雾山.jpg" width="700" height="400"></div>
+                    <div class="txt">这几天去上海China joy，应该会户外</div>
+                </div>
+            </div>
+            <div class="dynamic-footer">
+                <div class="dyfooter-left xy-center">
+                    <div>雾山</div>
+                </div>
+                <div class="dyfooter-right">
+                    <div class="transit">
+                        <div></div>
+                        转发
+                    </div>
+                    <div class="comment">
+                        <div></div>
+                        3
+                    </div>
+                    <div class="like">
+                        <div></div>
+                        7
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="dynamic3" class="dynamic">
+            <div class="dynamic-title">
+                <div class="dt-photo xy-center">
+                    <div id="dt-photo3"></div>
+                </div>
+                <div class="dt-name">
+                    <div class="">
+                        <div class="name">Xleft小叮当</div>
+                        <div class="sex xy-center"><div></div></div>
+                    </div>
+                    <div class="">
+                        08-01  23.2万阅读
+                    </div>
+                </div>
+                <div class="dt-down xy-center">
+                    <div></div>
+                </div>
+            </div>
+            <div class="dynamic-body">
+                <div>
+                    <div class="pic"><video src="images/主播动态/小叮当.mp4" width="700" height="400" id="myVideo"></div>
+                    <div id="xdd-btn"></div>
+                    <div class="txt">【XDD】看到最后！M24让你尖叫连连！</div>
+                </div>
+            </div>
+            <div class="dynamic-footer">
+                <div class="dyfooter-left xy-center">
+                    <div>Xleft小叮当</div>
+                </div>
+                <div class="dyfooter-right">
+                    <div class="transit">
+                        <div></div>
+                        2
+                    </div>
+                    <div class="comment">
+                        <div></div>
+                        86
+                    </div>
+                    <div class="like">
+                        <div></div>
+                        416
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="button">
+        <div>
+            <div class="button-pic" id="btn-pic1"></div>
+            <a href="../entertainment/index.html" target="_self"><div class="write">推荐</div></a>
+        </div>
+        <div>
+            <div class="button-pic" id="btn-pic2"></div>
+            <a href="../entertainment/index.html" target="_self"><div class="write">娱乐</div></a>
+        </div>
+        <div>
+            <div class="button-pic" id="btn-pic3"></div>
+            <div class="write" style="color: #ee7744">关注</div>
+        </div>
+        <div>
+            <div class="button-pic" id="btn-pic4"></div>
+            <a href="../fishbar/index.html" target="_self"><div class="write">鱼吧</div></a>
+        </div>
+        <div>
+            <div class="button-pic" id="btn-pic5"></div>
+            <a href="../found/index.html" target="_self"><div class="write">发现</div></a>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>

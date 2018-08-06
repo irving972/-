@@ -1,0 +1,90 @@
+#nav {
+    height: 120px;
+}
+
+#photo {
+    width: 160px;
+    height: 100px;
+
+}
+
+#photo div {
+    width: 100px;
+    height: 100px;
+    background: url("../../entertainment/images/头部导航栏/photo.jpg");
+    background-size: 100px 100px;
+    background-position: center;
+    border-radius: 50%;
+    box-shadow: 0 0 10px #000;
+}
+
+#search {
+    flex: 1;
+    height: 100px;
+    display: flex;
+    flex-flow: row;
+    background-color: rgba(255,255,255,0.2);
+    border-radius: 10px;
+
+}
+
+#s1 {
+    width: 100px;
+    height: 100px;
+    background: url("../../entertainment/images/头部导航栏/搜索.svg");
+    background-size: 50px 50px;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#s2 {
+    flex: 1;
+    font-size: 40px;
+    line-height: 100px;
+    color: #fff;
+}
+
+#s2:empty::before{
+    content:attr(placeholder);
+}
+
+
+#s3 {
+    width: 100px;
+    height: 100px;
+    background: url("../../entertainment/images/头部导航栏/扫一扫.svg");
+    background-size: 50px 50px;
+    background-position: center;
+    background-repeat: no-repeat;
+
+}
+
+#icon1 {
+    width: 100px;
+    height: 100px;
+    background: url("../../entertainment/images/头部导航栏/最近阅读.svg");
+    background-size: 60px 60px;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#icon2 {
+    width: 100px;
+    height: 100px;
+    background: url("../../entertainment/images/头部导航栏/游戏.svg");
+    background-size: 60px 60px;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#icon3 {
+    width: 100px;
+    height: 100px;
+    background: url("../../entertainment/images/头部导航栏/评论.svg");
+    background-size: 60px 60px;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+
+

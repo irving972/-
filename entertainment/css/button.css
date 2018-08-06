@@ -1,0 +1,60 @@
+#button {
+    width: 100%;
+    height: 150px;
+    display: flex;
+    flex-flow: wrap;
+    background-color: #fff;
+}
+
+#button>div {
+    width: 20%;
+    height: 150px;
+    box-sizing: border-box;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#button>div .button-pic {
+    background-size: cover;
+    background-position: center;
+}
+
+#btn-pic1 {
+    width: 70px;
+    height: 70px;
+    background: url("../../homePage/images/底端按钮/推荐.svg");
+}
+
+#btn-pic2 {
+    width: 70px;
+    height: 70px;
+    background: url("../../homePage/images/底端按钮/娱乐-orange.svg");
+}
+
+#btn-pic3 {
+    width: 75px;
+    height: 70px;
+    background: url("../../homePage/images/底端按钮/关注.svg");
+}
+
+#btn-pic4 {
+    width: 70px;
+    height: 70px;
+    background: url("../../homePage/images/底端按钮/鱼吧.svg");
+}
+
+#btn-pic5 {
+    width: 80px;
+    height: 70px;
+    background: url("../../homePage/images/底端按钮/发现.svg");
+}
+
+#button>div .write {
+    width: 100px;
+    height: 50px;
+    font-size: 40px;
+    text-align: center;
+}
+

@@ -1,0 +1,13 @@
+#advertise {
+    height: 200px;
+}
+
+#advertise div {
+    margin: 0 auto;
+    width: 99%;
+    height: 200px;
+    background: url("../images/斗鱼车队.png");
+    background-size: cover;
+    background-position: center;
+}
+

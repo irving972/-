@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>娱乐页</title>
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/container.css">
+    <link rel="stylesheet" href="css/header-signal.css">
+    <link rel="stylesheet" href="css/header-nav.css">
+    <link rel="stylesheet" href="css/header-menu.css">
+    <link rel="stylesheet" href="css/content.css">
+    <link rel="stylesheet" href="css/button.css">
+    <script>
+        var t;
+        t = setTimeout(time,0);
+        function time()
+        {
+            clearTimeout(t);
+            dt = new Date();
+            var h=dt.getHours();
+            var m=dt.getMinutes();
+            if(m < 10){
+                document.getElementById("time").innerHTML =  h + ":" + "0" + m ;
+            }else{
+                document.getElementById("time").innerHTML =  h + ":" + m ;
+            }
+            t = setTimeout(time,1000);
+        }
+    </script>
+
+</head>
+<body>
+<div id="container">
+    <!--头部开始-->
+    <div id="header">
+        <div id="signal">
+            <div id="signal-left">
+                <div id="time"></div>
+            </div>
+            <div id="signal-right">
+                <div id="signal-body">
+                    <div class="signal-body"></div>
+                    <div class="signal-body"></div>
+                    <div class="signal-body"></div>
+                    <div class="signal-body"></div>
+                </div>
+                <div id="network">
+                    <div>4G</div>
+                </div>
+                <div id="battery" class="xy-center">
+                    <div id="battery-body">
+                        <div id="battery-core" class="charging"></div>
+                    </div>
+                    <div id="battery-header"></div>
+                </div>
+
+            </div>
+        </div>
+        <div id="nav" class="xy-center">
+            <div id="photo" class="xy-center">
+                <a href="../personal/index.html"><div></div></a>
+            </div>
+            <div id="search">
+                <div id="s1"></div>
+                <div id="s2" contenteditable placeholder="主播陈一发儿"></div>
+                <div id="s3"></div>
+            </div>
+            <div id="icon1"></div>
+            <div id="icon2"></div>
+            <div id="icon3"></div>
+        </div>
+        <div id="menu">
+            <div class="title" style="font-weight: 600;">推荐</div>
+            <div class="title">颜值</div>
+            <div class="title">户外</div>
+            <div class="title">二次元</div>
+            <div class="title">音乐</div>
+            <div class="title">美食</div>
+        </div>
+    </div>
+    <!--头部结束-->
+
+    <!--中间开始-->
+    <div id="content">
+        <div id="banner"></div>
+
+        <div id="outdoor" class="live">
+            <div class="live-title">
+                <div class="lt-left">户外</div>
+                <div class="lt-right">查看更多></div>
+            </div>
+
+            <div class="live-body">
+                <div class="lb">
+                    <div class="lb-pic" id="lb-pic1">
+                        <div class="left">叶子户外</div>
+                        <div class="right">28.6万</div>
+                    </div>
+                    <div class="lb-title">明天早上九点开播</div>
+                </div>
+
+                <div class="lb">
+                    <div class="lb-pic" id="lb-pic2">
+                        <div class="left">刘小七7</div>
+                        <div class="right">8.1万</div>
+                    </div>
+                    <div class="lb-title">青青草原7妙之旅</div>
+                </div>
+
+                <div class="lb">
+                    <div class="lb-pic" id="lb-pic3">
+                        <div class="left">野槐户外</div>
+                        <div class="right">2.8万</div>
+                    </div>
+                    <div class="lb-title">上山第三天</div>
+                </div>
+
+                <div class="lb">
+                    <div class="lb-pic" id="lb-pic4">
+                        <div class="left">中华人参王</div>
+                        <div class="right">1.8万</div>
+                    </div>
+                    <div class="lb-title">深山老林的守参人……</div>
+                </div>
+            </div>
+        </div>
+        <div id="music" class="live">
+            <div class="live-title">
+                <div class="lt-left">音乐</div>
+                <div class="lt-right">查看更多></div>
+            </div>
+
+            <div class="live-body">
+                <div class="lb">
+                    <div class="lb-pic" id="lb2-pic1">
+                        <div class="left">问君酱</div>
+                        <div class="right">7229</div>
+                    </div>
+                    <div class="lb-title">【问君】若你喜欢怪人</div>
+                </div>
+
+                <div class="lb">
+                    <div class="lb-pic" id="lb2-pic2">
+                        <div class="left">JFLA的麦克风</div>
+                        <div class="right">5965</div>
+                    </div>
+                    <div class="lb-title">每周五晚上发布新歌作品</div>
+                </div>
+
+                <div class="lb">
+                    <div class="lb-pic" id="lb2-pic3">
+                        <div class="left">户外毛哥</div>
+                        <div class="right">4746</div>
+                    </div>
+                    <div class="lb-title">JFLA萌妹嗨曲</div>
+                </div>
+
+                <div class="lb">
+                    <div class="lb-pic" id="lb2-pic4">
+                        <div class="left">永远的游侠kk</div>
+                        <div class="right">4086</div>
+                    </div>
+                    <div class="lb-title">Johnny Cash专场</div>
+                </div>
+            </div>
+        </div>
+        <div id="science" class="live">
+            <div class="live-title">
+                <div class="lt-left">科技教育</div>
+                <div class="lt-right">查看更多></div>
+            </div>
+
+            <div class="live-body">
+                <div class="lb">
+                    <div class="lb-pic" id="lb3-pic1">
+                        <div class="left">小6想去月球</div>
+                        <div class="right">11.1万</div>
+                    </div>
+                    <div class="lb-title">配置咨询 快乐搞机</div>
+                </div>
+
+                <div class="lb">
+                    <div class="lb-pic" id="lb3-pic2">
+                        <div class="left">80it电脑网</div>
+                        <div class="right">10.6万</div>
+                    </div>
+                    <div class="lb-title">郑州80it：我回来了</div>
+                </div>
+
+                <div class="lb">
+                    <div class="lb-pic" id="lb3-pic3">
+                        <div class="left">河南四眼搞机</div>
+                        <div class="right">9万</div>
+                    </div>
+                    <div class="lb-title">九州风神空间站！！！</div>
+                </div>
+
+                <div class="lb">
+                    <div class="lb-pic" id="lb3-pic4">
+                        <div class="left">黑冰_希</div>
+                        <div class="right">7万</div>
+                    </div>
+                    <div class="lb-title">电脑怎么配？基冰来解答</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--中间结束-->
+
+    <!--尾部开始-->
+    <div id="button">
+        <div>
+            <div class="button-pic" id="btn-pic1"></div>
+            <a href="../homePage/index.html" target="_self"><div class="write">推荐</div></a>
+        </div>
+        <div>
+            <div class="button-pic" id="btn-pic2"></div>
+            <div class="write"  style="color: #ee7744">娱乐</div>
+        </div>
+        <div>
+            <div class="button-pic" id="btn-pic3"></div>
+            <a href="../attention/index.html" target="_self"><div class="write">关注</div></a>
+        </div>
+        <div>
+            <div class="button-pic" id="btn-pic4"></div>
+            <a href="../fishbar/index.html" target="_self"><div class="write">鱼吧</div></a>
+        </div>
+        <div>
+            <div class="button-pic" id="btn-pic5"></div>
+            <a href="../found/index.html" target="_self"><div class="write">发现</div></a>
+        </div>
+    </div>
+    <!--尾部结束-->
+</div>
+</body>
+</html>

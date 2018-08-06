@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/header-signal.css">
+    <link rel="stylesheet" href="css/container.css">
+    <link rel="stylesheet" href="css/header-nav.css">
+    <link rel="stylesheet" href="css/content.css">
+    <script>
+        var t;
+        t = setTimeout(time,0);
+        function time()
+        {
+            clearTimeout(t);
+            dt = new Date();
+            var h=dt.getHours();
+            var m=dt.getMinutes();
+            if(m < 10){
+                document.getElementById("time").innerHTML =  h + ":" + "0" + m ;
+            }else{
+                document.getElementById("time").innerHTML =  h + ":" + m ;
+            }
+            t = setTimeout(time,1000);
+        }
+    </script>
+</head>
+<body>
+    <div id="container">
+        <!--头部开始-->
+        <div id="header">
+            <div id="signal">
+                <div id="signal-left">
+                    <div id="time"></div>
+                </div>
+                <div id="signal-right">
+                    <div id="signal-body">
+                        <div class="signal-body"></div>
+                        <div class="signal-body"></div>
+                        <div class="signal-body"></div>
+                        <div class="signal-body"></div>
+                    </div>
+                    <div id="network">
+                        <div>4G</div>
+                    </div>
+                    <div id="battery" class="xy-center">
+                        <div id="battery-body">
+                            <div id="battery-core" class="charging"></div>
+                        </div>
+                        <div id="battery-header"></div>
+                    </div>
+
+                </div>
+            </div>
+            <div id="header-nav">
+                <a href="javascript:history.go(-1)"><div id="hn-left"></div></a>
+                <div id="hn-right">
+                    <div></div>
+                    <div></div>
+                </div>
+            </div>
+        </div>
+        <!--头部结束-->
+
+        <!--内容开始-->
+        <div id="content">
+            <div id="personal">
+                <div id="personal-top">
+                    <div id="pt-left" class="xy-center">
+                        <div id="photo"></div>
+                    </div>
+                    <div id="pt-middle">
+                        <div id="ptm-top">
+                            <div>飞翔的时光KI</div>
+                        </div>
+                        <div id="ptm-bottom">
+                            <div class="ptm-bottom">
+                                <div id="lv"></div>
+                                <div>5</div>
+                            </div>
+                            <div class="ptm-bottom">
+                                <div id="yuchi"></div>
+                                <div>0</div>
+                            </div>
+                            <div class="ptm-bottom">
+                                <div id="yuwan"></div>
+                                <div>334</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="pt-right" class="xy-center">
+                        <div></div>
+                    </div>
+                </div>
+                <div id="personal-bottom">
+                    <div>
+                        <div class="pb-pic" id="pb-pic1"></div>
+                        <div class="pb-txt">消息</div>
+                    </div>
+                    <div>
+                        <div class="pb-pic" id="pb-pic2"></div>
+                        <div class="pb-txt">我的任务</div>
+                    </div>
+                    <div>
+                        <div class="pb-pic" id="pb-pic3"></div>
+                        <div class="pb-txt">斗鱼贵族</div>
+                    </div>
+                    <div>
+                        <div class="pb-pic" id="pb-pic4"></div>
+                        <div class="pb-txt">鱼翅充值</div>
+                    </div>
+                </div>
+            </div>
+            <div id="detail" class="detail">
+                <div class="item">
+                    <div class="icon" id="icon1"></div>
+                    <div class="part">我的等级</div>
+                    <div class="blank"></div>
+                    <div class="state">Lv5</div>
+                    <div class="to-right"></div>
+                </div>
+
+                <div class="item">
+                    <div class="icon" id="icon2"></div>
+                    <div class="part">我的空间</div>
+                    <div class="blank"></div>
+                    <div class="state"></div>
+                    <div class="to-right"></div>
+                </div>
+
+                <div class="item">
+                    <div class="icon" id="icon3"></div>
+                    <div class="part">我的粉丝勋章</div>
+                    <div class="blank"></div>
+                    <div class="state"></div>
+                    <div class="to-right"></div>
+                </div>
+
+                <div class="item">
+                    <div class="icon" id="icon4"></div>
+                    <div class="part">小姐姐特权</div>
+                    <div class="blank"></div>
+                    <div class="state">斗鱼小姐姐的专属特权</div>
+                    <div class="to-right"></div>
+                </div>
+
+                <div class="item">
+                    <div class="icon" id="icon5"></div>
+                    <div class="part">我的积分</div>
+                    <div class="blank"></div>
+                    <div class="state"></div>
+                    <div class="to-right"></div>
+                </div>
+            </div>
+
+            <div id="detai2" class="detail">
+                <div class="item">
+                    <div class="icon" id="icon6"></div>
+                    <div class="part">主播相关</div>
+                    <div class="blank"></div>
+                    <div class="state">诚邀你加入手游推广计划</div>
+                    <div class="to-right"></div>
+                </div>
+
+                <div class="item">
+                    <div class="icon" id="icon7"></div>
+                    <div class="part">我的直播间</div>
+                    <div class="blank"></div>
+                    <div class="state"></div>
+                    <div class="to-right"></div>
+                </div>
+
+                <div class="item">
+                    <div class="icon" id="icon8"></div>
+                    <div class="part">我的公会</div>
+                    <div class="blank"></div>
+                    <div class="state">斗鱼公会给你无限可能</div>
+                    <div class="to-right"></div>
+                </div>
+
+                <div class="item">
+                    <div class="icon" id="icon9"></div>
+                    <div class="part">我的鱼吧</div>
+                    <div class="blank"></div>
+                    <div class="state"></div>
+                    <div class="to-right"></div>
+                </div>
+
+                <div class="item">
+                    <div class="icon" id="icon10"></div>
+                    <div class="part">游戏中心</div>
+                    <div class="blank"></div>
+                    <div class="state">玩游戏领鱼丸</div>
+                    <div class="to-right"></div>
+                </div>
+
+                <div class="item">
+                    <div class="icon" id="icon11"></div>
+                    <div class="part">我的竞猜</div>
+                    <div class="blank"></div>
+                    <div class="state"></div>
+                    <div class="to-right"></div>
+                </div>
+
+                <div class="item">
+                    <div class="icon" id="icon12"></div>
+                    <div class="part">金牌陪玩</div>
+                    <div class="blank"></div>
+                    <div class="state"></div>
+                    <div class="to-right"></div>
+                </div>
+            </div>
+
+            <div id="detai3" class="detail">
+                <div class="item">
+                    <div class="icon" id="icon13"></div>
+                    <div class="part">主播招募</div>
+                    <div class="blank"></div>
+                    <div class="state"></div>
+                    <div class="to-right"></div>
+                </div>
+
+                <div class="item">
+                    <div class="icon" id="icon14"></div>
+                    <div class="part">排行榜</div>
+                    <div class="blank"></div>
+                    <div class="state"></div>
+                    <div class="to-right"></div>
+                </div>
+            </div>
+
+            <div id="detai4" class="detail">
+                <div class="item">
+                    <div class="icon" id="icon15"></div>
+                    <div class="part">我的视频</div>
+                    <div class="blank"></div>
+                    <div class="state"></div>
+                    <div class="to-right"></div>
+                </div>
+
+                <div class="item">
+                    <div class="icon" id="icon16"></div>
+                    <div class="part">视频收益</div>
+                    <div class="blank"></div>
+                    <div class="state"></div>
+                    <div class="to-right"></div>
+                </div>
+
+                <div class="item">
+                    <div class="icon" id="icon17"></div>
+                    <div class="part">视频收藏</div>
+                    <div class="blank"></div>
+                    <div class="state"></div>
+                    <div class="to-right"></div>
+                </div>
+
+                <div class="item">
+                    <div class="icon" id="icon18"></div>
+                    <div class="part">视频任务</div>
+                    <div class="blank"></div>
+                    <div class="state" style="color: #f19e59">今日还可以领取20鱼丸</div>
+                    <div class="to-right"></div>
+                </div>
+            </div>
+
+            <div id="detai5" class="detail">
+                <div class="item">
+                    <div class="icon" id="icon19"></div>
+                    <div class="part">我的账户</div>
+                    <div class="blank"></div>
+                    <div class="state"></div>
+                    <div class="to-right"></div>
+                </div>
+
+                <div class="item">
+                    <div class="icon" id="icon20"></div>
+                    <div class="part">免流量特权</div>
+                    <div class="blank"></div>
+                    <div class="state"></div>
+                    <div class="to-right"></div>
+                </div>
+            </div>
+
+            <div id="detai6" class="detail">
+                <div class="item">
+                    <div class="icon" id="icon21"></div>
+                    <div class="part">我是房管</div>
+                    <div class="blank"></div>
+                    <div class="state"></div>
+                    <div class="to-right"></div>
+                </div>
+
+                <div class="item">
+                    <div class="icon" id="icon22"></div>
+                    <div class="part">关注管理</div>
+                    <div class="blank"></div>
+                    <div class="state"></div>
+                    <div class="to-right"></div>
+                </div>
+
+                <div class="item">
+                    <div class="icon" id="icon23"></div>
+                    <div class="part">开播提醒</div>
+                    <div class="blank"></div>
+                    <div class="state"></div>
+                    <div class="to-right"></div>
+                </div>
+            </div>
+        </div>
+        <!--内容结束-->
+    </div>
+</body>
+</html>
